@@ -51,7 +51,7 @@ function Clientreq(){
             <div key={item.id} className="bg-slate-100 mb-3">
               <h3>{item.id}</h3>
               <p>{item.email}</p>
-              </div>
+            </div>
           )}
   </div>
  )
