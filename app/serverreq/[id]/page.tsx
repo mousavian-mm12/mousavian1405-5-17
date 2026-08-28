@@ -27,6 +27,7 @@ try{
 
           <img
             src={data.image}
+            data-product-image ={data.id}
             className="h-[200px] w-[200px] object-contain"
             alt={data.title}
           />

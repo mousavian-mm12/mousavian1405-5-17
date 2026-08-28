@@ -141,7 +141,7 @@ body {
 }
 
 footer{
-  @apply w-full mx-auto bg-slate-600 text-slate-300 text-xs
+  @apply w-full mx-auto bg-site-footer text-slate-300 text-xs
   py-6 px-16 flex items-center justify-between *:space-x-6
   *:flex *:items-center;
   position: fixed;
@@ -154,4 +154,14 @@ footer{
 
 .ltr{
   direction: ltr;
+}
+
+@theme {
+  --color-site-footer: #5b536b;
+  --color-site-bg: #faf7fb;
+  --color-site-card: #f3edf7;
+
+  --color-home-purple: #8b5cf6;
+  --color-home-pink: #ec8fba;
+  --color-home-peach: #f6b38f;
 }

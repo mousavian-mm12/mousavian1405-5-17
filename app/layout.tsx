@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
 import ReduxProvider from "@/redux/Provider";
-import { Provider } from "react-redux";
+import LayoutShell from "@/components/layout/LayoutShell";
+
 
 
 export const metadata: Metadata = {
@@ -20,13 +20,12 @@ export default function RootLayout({
       lang="en"
       className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col pb-16">
+      <body className="min-h-full">
         <ReduxProvider>
 
-        <Navbar/>
-        {children}
-        
-        <footer className="mt-auto" >@MM</footer>
+       <LayoutShell>
+         {children}
+       </LayoutShell>
         
         </ReduxProvider>
         
